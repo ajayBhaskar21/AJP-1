@@ -7,8 +7,11 @@ public class Task {
 	private int priorityLevel;
 	private boolean completionStatus;
 
+	public Task() {
+
+	}
+
 	public Task(String title, String description, int priorityLevel, boolean completionStatus) {
-		super();
 		this.title = title;
 		this.description = description;
 		this.priorityLevel = priorityLevel;
@@ -39,7 +42,7 @@ public class Task {
 		this.priorityLevel = priorityLevel;
 	}
 
-	public boolean isCompletionStatus() {
+	public boolean getCompletionStatus() {
 		return completionStatus;
 	}
 
