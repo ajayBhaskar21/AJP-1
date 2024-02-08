@@ -51,6 +51,10 @@ public class taskController {
 	}
 
 	public void displayTask() {
+		if (taskList.size() == 0) {
+			System.out.println("No tasks!!\n");
+			return ;
+		}
 		view.displayTasks(taskList);
 	}
 
