@@ -1,0 +1,47 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="AddArticleAction" class="com.example.AddArticleAction"
+			method="post">
+			<result name="success">/index.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="UpdateArticleAction" class="com.example.UpdateArticleAction"
+			method="post">
+			<result name="success">/displayArticles.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="DeleteArticleAction" class="com.example.DeleteArticleAction"
+			method="post">
+			<result name="success">/displayArticles.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="printAction" class="com.example.printAction"
+			method="post">
+			<result name="success">/index.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="LoginAction" class="com.example.LoginAction"
+			method="post">
+			<result name="success">/userHome.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="SignupAction" class="com.example.SignupAction"
+			method="post">
+			<result name="success">/login.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="AdminLoginAction" class="com.example.AdminLoginAction"
+			method="post">
+			<result name="success">/adminHome.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		
+		
+	</package>
+</struts>
